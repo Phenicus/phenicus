@@ -18,9 +18,16 @@
         {{i18n "user.preferences_nav.profile"}}
       {{/link-to}}
     </li>
+    {{! 界面设置 }}
     <li class="nav-interface">
       {{#link-to "preferences.interface"}}
         {{i18n "user.preferences_nav.interface"}}
+      {{/link-to}}
+    </li>
+    {{! 通知设置 }}
+    <li class="nav-notifications">
+      {{#link-to "preferences.notifications"}}
+        {{i18n "user.preferences_nav.notifications"}}
       {{/link-to}}
     </li>
     {{plugin-outlet
