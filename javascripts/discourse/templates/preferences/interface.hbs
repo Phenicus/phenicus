@@ -149,22 +149,24 @@
       class="pref-external-links"
     }}
   {{/if}}
-
+  {{! 在新标签页中打开所有外部链接 }}
   {{preference-checkbox
     labelKey="user.external_links_in_new_tab"
     checked=model.user_option.external_links_in_new_tab
     class="pref-external-links"
   }}
+  {{! 为突出显示的文字启用引用回复 }}
   {{preference-checkbox
     labelKey="user.enable_quoting"
     checked=model.user_option.enable_quoting
     class="pref-enable-quoting"
   }}
-  {{preference-checkbox
+  {{! 启用延迟以将话题标记为未读 }}
+  {{!-- {{preference-checkbox
     labelKey="user.enable_defer"
     checked=model.user_option.enable_defer
     class="pref-defer-undread"
-  }}
+  }} --}}
   {{#if siteSettings.automatically_unpin_topics}}
     {{preference-checkbox
       labelKey="user.automatically_unpin_topics"
